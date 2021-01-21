@@ -1,0 +1,18 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const usuario = 'Giovanni';
+const sesion = false;
+
+const microfono =(
+  <>
+    {sesion===true ? 
+    <>
+    <h1>Bienvenido {usuario}</h1>
+    <p>Que tengas un buen día</p>
+    </>
+    : <p>No ha podido iniciar sesion</p>}
+  </>
+)
+
+ReactDOM.render(microfono,document.getElementById('root'));
